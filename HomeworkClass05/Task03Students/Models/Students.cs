@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Task3_Students.Models
+namespace Task03Students.Models
 {
     public class Students
     {
@@ -24,7 +24,4 @@ namespace Task3_Students.Models
             return $"Name of the student is {Name} and is on {Academy} academy and it's in the {Group} group";
         }
     }
-
-
-    
 }

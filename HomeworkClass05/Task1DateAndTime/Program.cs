@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Homework_Class05
+namespace Task1DateAndTime
 {
     class Program
     {

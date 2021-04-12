@@ -1,6 +1,7 @@
 ﻿using System;
+using Task2DriverAndCars.Models;
 
-namespace Task2_DriverAndCar
+namespace Task2DriverAndCars
 {
     class Program
     {
@@ -20,7 +21,7 @@ namespace Task2_DriverAndCar
 
         static Car CheckCar(Car[] cars, string carSelected)
         {
-            foreach(Car car in cars)
+            foreach (Car car in cars)
             {
                 if (carSelected.ToLower() == car.CarModel.ToLower()) return car;
             }
@@ -46,8 +47,6 @@ namespace Task2_DriverAndCar
                 Console.WriteLine("Try again - Result is equal");
             }
         }
-
-
         static void Main(string[] args)
         {
             #region Drivers
@@ -71,7 +70,7 @@ namespace Task2_DriverAndCar
             };
             #endregion
 
-            
+
 
             while (true)
             {
@@ -141,7 +140,7 @@ namespace Task2_DriverAndCar
                         firstCarSpeed = car01.CarSpeed;
                     }
 
-                    
+
                 }
                 inputCheck = true;
                 #endregion
@@ -200,11 +199,11 @@ namespace Task2_DriverAndCar
 
                     Car car02 = CheckCar(cars, secondCarSelected);
 
-                    if ( car02 == null)
+                    if (car02 == null)
                     {
                         Console.WriteLine("Wrong input, try again with name from list");
                     }
-                    if ( car02 != null)
+                    if (car02 != null)
                     {
                         inputCheck = false;
                         Console.WriteLine($"Selected car is {car02.CarModel}, and max speed is: {car02.CarSpeed}");
@@ -215,8 +214,8 @@ namespace Task2_DriverAndCar
                 inputCheck = true;
                 #endregion
 
-                Console.WriteLine("You selected two Drivers and two Cars, press any button to see the result");
-                
+                Console.WriteLine("You selected two Drivers and two Cars, and here is result from race.");
+
                 Console.WriteLine("================================================================");
 
                 RaceCars(firstDriverSelected, firstCarSelected, firstCarSpeed, driver01Skill, secondDriverSelected, secondCarSelected, secondCarSpeed, driver02Skill);
@@ -226,7 +225,7 @@ namespace Task2_DriverAndCar
 
                 string exit = Console.ReadLine();
 
-                if ( exit == "q" || exit == "Q")
+                if (exit == "q" || exit == "Q")
                 {
                     Environment.Exit(0);
                 }
@@ -239,10 +238,6 @@ namespace Task2_DriverAndCar
 
 
             }
-
-
-
-
         }
     }
 }

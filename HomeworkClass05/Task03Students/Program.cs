@@ -1,7 +1,7 @@
 ﻿using System;
-using Task3_Students.Models;
+using Task03Students.Models;
 
-namespace Task3_Students
+namespace Task03Students
 {
     class Program
     {
@@ -43,8 +43,6 @@ namespace Task3_Students
                     Environment.Exit(0);
                 }
             }
-
-            
         }
     }
 }
